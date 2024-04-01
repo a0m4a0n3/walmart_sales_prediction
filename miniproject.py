@@ -70,7 +70,7 @@ def main():
         country = "USA"
         quantity = st.number_input("Enter Quantity:", min_value=1,step = 1)
         discount = st.number_input("Enter Discount:",  min_value=0.0,step = 0.1)
-        year = st.number_input("Enter Year:", min_value=1900, max_value=4000, step=1)
+        year = st.number_input("Enter Year:", min_value=2005, max_value=4000, step=1)
         month = st.number_input("Enter Month:", min_value=1, max_value=12, step=1)
         enter_button = st.button("Enter")
     
