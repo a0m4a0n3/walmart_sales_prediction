@@ -137,7 +137,7 @@ def main():
                 \u2022 Month: {month}
                 \u2022 predicted sales: {predicted_sales}
                 """
-                tooltip_text = f"""City: {selected_city}, Year: {year}, Month: {month}, Sales: {predicted_sales[0]}"""
+                tooltip_text = f"""City: {selected_city}, Year: {year}, Month: {month}, Predicted sales: {predicted_sales[0]}"""
                 folium.Marker(location, popup=folium.Popup(popup_text, parse_html=True), tooltip=tooltip_text, permanent=True).add_to(m)
 
                 folium_static(m)
